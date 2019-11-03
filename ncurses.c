@@ -6,6 +6,11 @@
 /*Array to store 10 random integers from 0 to 100*/
 
 int r[10];
+WINDOW  *marks,*answers,*heading,*timer,*question;
+void ques(WINDOW *remp,int n,int y);
+void print_menu(WINDOW *menu_win, int highlight);
+void opt();
+int ans();
 
 /*Function to store and generate 10 random integers*/
 
@@ -202,11 +207,6 @@ void print_menu(WINDOW *answers, int highlight)
 Pointer is needed to perform any kind of operation in windows as we want it to 
 make the change at base address of the window*/ 
 
-WINDOW  *marks,*answers,*heading,*timer,*question;
-void ques(WINDOW *remp,int n,int y);
-void print_menu(WINDOW *menu_win, int highlight);
-void opt();
-int ans();
 int main(int argc,char *argv[])
 {
   int row,col,p=0,i=0;
