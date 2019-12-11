@@ -12,7 +12,6 @@ void print_menu(WINDOW *menu_win, int highlight);
 int ans();
 
 /*Function to store and generate 10 random integers*/
-
 void randgen( ) {                                                                  
   srand( (unsigned)time( NULL ) );
   int num,i;
